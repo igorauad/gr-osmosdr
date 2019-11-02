@@ -137,7 +137,7 @@ endif(ENABLE_OSMOSDR)
 ########################################################################
 # Setup File component
 ########################################################################
-GR_REGISTER_COMPONENT("IQ File Source & Sink" ENABLE_FILE GNURADIO_BLOCKS_FOUND)
+GR_REGISTER_COMPONENT("IQ File Source & Sink" ENABLE_FILE gnuradio-blocks_FOUND)
 if(ENABLE_FILE)
 GR_INCLUDE_SUBDIRECTORY(file)
 endif(ENABLE_FILE)
@@ -153,7 +153,7 @@ endif(ENABLE_RTL)
 ########################################################################
 # Setup RTL_TCP component
 ########################################################################
-GR_REGISTER_COMPONENT("RTLSDR TCP Client" ENABLE_RTL_TCP GNURADIO_BLOCKS_FOUND)
+GR_REGISTER_COMPONENT("RTLSDR TCP Client" ENABLE_RTL_TCP gnuradio-blocks_FOUND)
 if(ENABLE_RTL_TCP)
 GR_INCLUDE_SUBDIRECTORY(rtl_tcp)
 endif(ENABLE_RTL_TCP)
